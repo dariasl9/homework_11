@@ -18,7 +18,10 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt-get install -y build-essential cmake
+          sudo apt-get install -y \
+            build-essential \
+            cmake \
+            libboost-system-dev
 
       - name: Configure CMake
         run: |
